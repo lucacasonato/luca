@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "my-site",
+  "license": "MIT",
+  "scripts": {
+    "dev": "saber",
+    "build": "saber build"
+  },
+  "devDependencies": {
+    "saber": "^0.6.4",
+    "saber-theme-portfolio": "latest",
+    "saber-plugin-query-posts": "^0.3.1"
+  }
+}
