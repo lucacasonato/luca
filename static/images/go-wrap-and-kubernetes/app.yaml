@@ -1,0 +1,35 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: go-wrap-kubernetes
+  labels:
+    app: go-wrap-kubernetes
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: go-wrap-kubernetes
+    spec:
+      containers:
+      - name: go-wrap-kubernetes
+        image: gcr.io/blog-kube-test/go-wrap-kubernetes:v0.1.0
+        imagePullPolicy: Always
+        command:
+        ports:
+          - containerPort: 5000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: go-wrap-kubernetes
+spec:
+  type: LoadBalancer
+  selector:
+    app: go-wrap-kubernetes
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
