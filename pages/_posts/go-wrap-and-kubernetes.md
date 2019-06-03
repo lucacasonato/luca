@@ -1,7 +1,7 @@
 ---
 title: Go, Wrap and Kubernetes
 layout: post
-date: 2019-05-29 23:18:00
+date: 2019-06-03 21:15:00
 tags:
   - wrap
   - kubernetes
