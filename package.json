@@ -1,14 +1,14 @@
 {
   "private": true,
-  "name": "my-site",
+  "name": "lcas-dev",
   "license": "MIT",
   "scripts": {
     "dev": "saber",
     "build": "saber build"
   },
   "devDependencies": {
-    "saber": "^0.6.4",
-    "saber-theme-portfolio": "latest",
-    "saber-plugin-query-posts": "^0.3.1"
+    "saber": "^0.6.7",
+    "saber-plugin-query-posts": "^0.3.2",
+    "saber-theme-portfolio": "^0.1.9"
   }
 }
