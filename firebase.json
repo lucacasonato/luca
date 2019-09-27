@@ -3,6 +3,7 @@
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
+      { "source": "/s/**", "dynamicLinks": true },
       {
         "source": "**",
         "destination": "/index.html"
