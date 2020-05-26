@@ -1,0 +1,51 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown img {
+  @apply w-full;
+  @apply rounded-md;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown p:first-child,
+.markdown ul:first-child,
+.markdown ol:first-child,
+.markdown blockquote:first-child {
+  @apply mt-2;
+}
+
+.markdown p:last-child,
+.markdown ul:last-child,
+.markdown ol:last-child,
+.markdown blockquote:last-child {
+  @apply mb-2;
+}
+
+.markdown blockquote {
+  @apply bg-gray-100;
+  @apply py-2;
+  @apply px-4;
+  @apply border-l-4 border-gray-300 rounded-r-md;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+
+.markdown pre {
+  @apply bg-gray-100;
+  @apply p-4;
+  @apply rounded-md;
+  @apply overflow-x-auto;
+}
