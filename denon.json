@@ -1,0 +1,17 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "dev": {
+      "cmd": "deno run lib/main.ts dev"
+    }
+  },
+  "logger": {
+    "fullscreen": true,
+    "quiet": false
+  },
+  "unstable": true,
+  "allow": ["read", "write", "net"],
+  "watcher": {
+    "skip": ["*/.git/*", "static/*"]
+  }
+}
