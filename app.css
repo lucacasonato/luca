@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 .link {
-  @apply text-blue-500;
+  @apply text-blue-600;
   @apply transition;
   @apply duration-75;
   @apply ease-in-out;
 }
 
 .link:hover {
-  @apply text-blue-400;
+  @apply text-blue-500;
 }
