@@ -1,4 +1,8 @@
-import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
+import {
+  Application,
+  Router,
+  send,
+} from "https://deno.land/x/oak@v6.3.1/mod.ts";
 import { buildPages } from "../pages.tsx";
 import { copy } from "./deps.ts";
 
@@ -8,7 +12,7 @@ switch (Deno.args[0]) {
     await buildPages(false);
     console.log("Built pages");
     break;
-  case "dev":
+  case "dev": {
     await copy("./public", "./static", { overwrite: true });
     await buildPages(true);
 
@@ -31,6 +35,7 @@ switch (Deno.args[0]) {
     console.log("Listening on http://localhost:8000");
     await app.listen({ port: 8000 });
     break;
+  }
   default:
     console.log("Missing 'build' or 'dev' argument.");
     break;

@@ -2,7 +2,7 @@ PATH := /opt/buildhome/.deno/bin:${PATH}
 
 netlify:
 	curl -fsSL https://deno.land/x/install/install.sh | sh
-	deno install --allow-read --allow-run --allow-write --allow-net -f --unstable https://deno.land/x/denon@v2.2.0/denon.ts
+	deno install --allow-read --allow-run --allow-write --allow-net -f --unstable https://deno.land/x/denon@2.4.4/denon.ts
 	make build
 
 build:
