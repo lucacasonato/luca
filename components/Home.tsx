@@ -16,7 +16,7 @@ function Home() {
             alt="luca casonato"
             className="w-24 md:w-32 md:h-32 rounded-full"
           />
-          <div className="mt-4 sm:mt-0 sm:ml-8 flex flex-col justify-center">
+          <div className="mt-8 sm:mt-0 sm:ml-8 flex flex-col justify-center">
             <p className="text-gray-900 leading-tight text-2xl md:text-3xl">
               Hello, I'm
             </p>
