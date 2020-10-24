@@ -5,20 +5,24 @@ function Home() {
   return (
     <Layout
       title="Home - Luca Casonato"
-      description="Programmer - love Go, Typescript & Flutter. Contributor to @denoland. 🚀 🏳️‍🌈 🇪🇺 🌻 💚"
+      description="Programmer - love Rust, Go, Typescript & fast websites. Full time @denoland. 🚀 🏳️‍🌈 🌻 💚"
     >
-      <div className="mx-auto max-w-screen-md px-4 sm:px-6 md:px-8 my-12 sm:my-20 md:my-32">
+      <div
+        className="mx-auto max-w-screen-md px-4 sm:px-6 md:px-8 my-12 sm:my-20 md:my-32"
+      >
         <div className="flex flex-col sm:flex-row">
           <img
             src="/me.jpg"
             alt="luca casonato"
-            className="w-24 w-24 md:w-32 md:h-32 rounded-full"
+            className="w-24 md:w-32 md:h-32 rounded-full"
           />
           <div className="mt-4 sm:mt-0 sm:ml-8 flex flex-col justify-center">
             <p className="text-gray-900 leading-tight text-2xl md:text-3xl">
               Hello, I'm
             </p>
-            <h1 className="text-gray-900 leading-tight font-semibold text-4xl md:text-5xl">
+            <h1
+              className="text-gray-900 leading-tight font-semibold text-4xl md:text-5xl"
+            >
               Luca Casonato
             </h1>
           </div>
@@ -28,22 +32,27 @@ function Home() {
           <a href="https://github.com/lucacasonato" className="link">
             open source enthusiast
           </a>
-          . I like Go, TypeScript, Rust, Kubernetes and fast websites. I
-          actively contribute to the{" "}
+          . I like Rust, Go, TypeScript, and fast websites. I work full time on
+          the{" "}
           <a href="https://deno.land" className="link">
             Deno
-          </a>{" "}
+          </a>
+          {" "}
           project. I built{" "}
-          <a href="https://github.com/now-deno" className="link">
+          <a href="https://github.com/lucacasonat/now-deno" className="link">
             now-deno
           </a>
-          , and a few other open source libraries.
+          ,{" "}
+          <a href="https://github.com/lucacasonat/dext.ts" className="link">
+            dext.ts
+          </a>, and a few other open source libraries.
         </div>
         <div className="mt-10 text-lg leading-7 text-gray-900">
           Wanna talk about something? DM me on{" "}
           <a href="https://twitter.com/lcasdev" className="link">
             Twitter
-          </a>{" "}
+          </a>
+          {" "}
           or email me at{" "}
           <a href="mailto:hello@lcas.dev" className="link">
             hello@lcas.dev
@@ -78,7 +87,9 @@ function Home() {
               fill="currentColor"
               viewBox="0 0 24 24"
             >
-              <path d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z" />
+              <path
+                d="M23.954 4.569a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"
+              />
             </svg>
           </a>
         </div>
