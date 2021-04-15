@@ -1,6 +1,9 @@
 {
-  "dependencies": {
-    "@tailwindcss/ui": "^0.3.0",
-    "tailwindcss": "^1.4.6"
+  "private": true,
+  "devDependencies": {
+    "@kt3k/proto-polyfill": "1.0.0",
+    "autoprefixer": "10.2.5",
+    "postcss": "8.2.10",
+    "tailwindcss": "2.1.1"
   }
 }

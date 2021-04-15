@@ -1,7 +1,9 @@
-import { React } from "../lib/deps.ts";
+/** @jsx h */
+
+import { h } from "../deps.ts";
 import Layout from "./Layout.tsx";
 
-function Home() {
+export function Home() {
   return (
     <Layout
       title="Home - Luca Casonato"
@@ -12,7 +14,7 @@ function Home() {
       >
         <div className="flex flex-col sm:flex-row">
           <img
-            src="/me.jpg"
+            src="/static/me.jpg"
             alt="luca casonato"
             className="w-24 md:w-32 md:h-32 rounded-full"
           />
@@ -32,27 +34,29 @@ function Home() {
           <a href="https://github.com/lucacasonato" className="link">
             open source enthusiast
           </a>
-          . I like Rust, Go, TypeScript, and fast websites. I work full time on
-          the{" "}
+          . I like Rust, Go, TypeScript, and fast websites. I work at the{" "}
           <a href="https://deno.land" className="link">
             Deno
-          </a>
-          {" "}
-          project. I built{" "}
-          <a href="https://github.com/lucacasonat/now-deno" className="link">
-            now-deno
+          </a>{" "}
+          company. I built{" "}
+          <a href="https://github.com/lucacasonato/dext.ts" className="link">
+            dext.ts
           </a>
           ,{" "}
-          <a href="https://github.com/lucacasonat/dext.ts" className="link">
-            dext.ts
-          </a>, and a few other open source libraries.
+          <a
+            href="https://github.com/lucacasonato/deno-puppeteer"
+            className="link"
+          >
+            deno-puppeteer
+          </a>
+          , and a few other open source libraries. Probably reading some web
+          spec right now.
         </div>
         <div className="mt-10 text-lg leading-7 text-gray-900">
           Wanna talk about something? DM me on{" "}
           <a href="https://twitter.com/lcasdev" className="link">
             Twitter
-          </a>
-          {" "}
+          </a>{" "}
           or email me at{" "}
           <a href="mailto:hello@lcas.dev" className="link">
             hello@lcas.dev
@@ -97,5 +101,3 @@ function Home() {
     </Layout>
   );
 }
-
-export default Home;

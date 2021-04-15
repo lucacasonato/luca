@@ -1,6 +1,12 @@
-import { React } from "../lib/deps.ts";
+/** @jsx h */
 
-function Layout(props: { title: string; description: string; children: any }) {
+import { ComponentChild, h } from "../deps.ts";
+
+function Layout(props: {
+  title: string;
+  description: string;
+  children: ComponentChild;
+}) {
   return (
     <html lang="en">
       <head>
@@ -8,7 +14,12 @@ function Layout(props: { title: string; description: string; children: any }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{props.title}</title>
         <meta name="Description" content={props.description} />
-        <link rel="stylesheet" href="/app.css" />
+        <link rel="stylesheet" href="/static/app.css" />
+        <link
+          rel="shortcut icon"
+          href="/static/favicon.ico"
+          type="image/x-icon"
+        />
       </head>
       <body>{props.children}</body>
     </html>

@@ -1,3 +1,0 @@
-[build]
-  publish = "static/"
-  command = "make netlify"
