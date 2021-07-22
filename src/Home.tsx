@@ -39,8 +39,8 @@ export function Home() {
             Deno
           </a>{" "}
           company. I built{" "}
-          <a href="https://github.com/lucacasonato/dext.ts" className="link">
-            dext.ts
+          <a href="https://github.com/lucacasonato/fresh" className="link">
+            fresh
           </a>
           ,{" "}
           <a
