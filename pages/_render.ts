@@ -20,6 +20,8 @@ export function render(ctx: RenderContext, render: RenderFn) {
 }
 
 export function postRender(ctx: RenderContext) {
+  const isBlogPage = ctx.url.pathname.startsWith("/blog/");
+
   // viewport
   ctx.head.push(
     h("meta", {
@@ -27,6 +29,15 @@ export function postRender(ctx: RenderContext) {
       content: "width=device-width, initial-scale=1.0",
     }),
   );
+
+  if (isBlogPage) {
+    // markdown stylesheet preload
+    ctx.head.push(h("link", {
+      rel: "preload",
+      href: "/markdown.css",
+      as: "style",
+    }));
+  }
 
   // title and description
   if (ctx.route === "/") {
@@ -47,6 +58,37 @@ export function postRender(ctx: RenderContext) {
     }),
   );
 
+  if (isBlogPage) {
+    // prism
+    ctx.head.push(h("script", { src: "/prism.js" }));
+
+    ctx.head.push(
+      h("style", {
+        dangerouslySetInnerHTML: {
+          __html: `
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #c9d1d9;
+    background-color: #0d1117;
+  }
+}
+    `,
+        },
+      }),
+    );
+  }
+
   // twind css
   const snapshot = ctx.state.get("twindSnapshot") as unknown[] | null;
   if (snapshot !== null) {
@@ -57,4 +99,9 @@ export function postRender(ctx: RenderContext) {
     );
   }
   sheet.reset(initial);
+
+  if (isBlogPage) {
+    // markdown stylesheet
+    ctx.head.push(h("link", { rel: "stylesheet", href: "/markdown.css" }));
+  }
 }

@@ -45,13 +45,12 @@ by all browser engines.
 All of these parsers are written in Rust or C++ - that means I can't just import
 this code directly into my Deno program written in TypeScript. I can however
 compile the parsers to WebAssembly and execute them portably inside my secure
-JavaScript sandbox. This has the additional benefit of shielding the host system
-from possible memory corruption bugs in any of the parsers.
+JavaScript sandbox.
 
-The parser only lets us parse the HTML. We also need some code to actually
-remove problematic elements (like `<script>` tags). There is an excellent HTML
-sanitizer library written in Rust that uses the `html5ever` parser:
-[`ammonia`][ammonia]. It has a super simple API we will use: it takes an
+The parser only lets us parse the HTML however. We also need some code to
+actually remove problematic elements (like `<script>` tags). There is an
+excellent HTML sanitizer library written in Rust that uses the `html5ever`
+parser: [`ammonia`][ammonia]. It has a super simple API we will use: it takes an
 untrusted HTML string as input and returns a sanitized version.
 
 [ammonia]: https://crates.io/crates/ammonia
@@ -109,7 +108,7 @@ wasm-bindgen = "0.2.74"
 
 Now that dependencies are configured, let's write our actual code:
 
-```rs
+```rust
 // main.rs
 
 use wasm_bindgen::prelude::*;
