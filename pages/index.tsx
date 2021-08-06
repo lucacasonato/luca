@@ -36,7 +36,15 @@ export default function Home() {
         <a href="https://deno.com/blog/the-deno-company" class={linkClass}>
           Deno
         </a>{" "}
-        company. I built{" "}
+        company, building{" "}
+        <a href="https://deno.land" class={linkClass}>
+          Deno
+        </a>{" "}
+        and{" "}
+        <a href="https://deno.com/deploy" class={linkClass}>
+          Deno Deploy
+        </a>
+        . I built{" "}
         <a href="https://github.com/lucacasonato/fresh" class={linkClass}>
           fresh
         </a>
