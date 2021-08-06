@@ -14,6 +14,8 @@ export default function Home() {
         <img
           src="/me.jpg"
           alt="luca casonato"
+          width="500"
+          height="500"
           class={tw`w(24 md:32) h(24 md:32) rounded-full`}
         />
         <div class={tw`mt(8 sm:0) sm:ml-8 flex flex-col justify-center`}>
