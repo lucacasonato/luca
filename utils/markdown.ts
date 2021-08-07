@@ -7,7 +7,9 @@ export function prepareMarkdown<T>(markdown: string): {
   content: string;
   data: T;
 } {
+  console.time("parse markdown");
   const { content, data } = frontmatterParse(markdown);
+  console.timeEnd("parse markdown");
   return { content, data: data as T };
 }
 
@@ -72,16 +74,22 @@ const OCTICON_SVG =
 /** Render a markdown file to HTML. */
 export function renderMarkdown(markdown: string): string {
   // Render the markdown to HTML.
+  console.time("render markdown");
   let html = comrak.markdownToHTML(markdown, COMRAK_OPTIONS);
+  console.timeEnd("render markdown");
 
   // Sanitize the HTML using ammonia.
+  console.time("sanitize html");
   html = AMMONIA.clean(html);
+  console.timeEnd("sanitize html");
 
   // Inject the octicon icon into header links.
+  console.time("inject octicons");
   html = html.replaceAll(
     /<a href="#[a-zA-Z\d-]*" aria-hidden="true" class="anchor" id="[a-zA-Z\d-]*" rel="noopener noreferrer"><\/a>/g,
     (match) => match.replace("</a>", OCTICON_SVG),
   );
+  console.timeEnd("inject octicons");
 
   return html;
 }

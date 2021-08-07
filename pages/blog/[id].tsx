@@ -12,8 +12,10 @@ import { prepareMarkdown, renderMarkdown } from "../../utils/markdown.ts";
 export const config: PageConfig = { runtimeJS: false };
 
 async function fromDisk(path: string): Promise<string | null> {
+  console.time(`load ${path} from disk`);
   try {
     const txt = await Deno.readTextFile(join("./", path));
+    console.timeEnd(`load ${path} from disk`);
     return txt;
   } catch (err) {
     if (err instanceof Deno.errors.NotFound) {
