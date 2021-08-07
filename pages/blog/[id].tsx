@@ -1,12 +1,4 @@
-import {
-  frontmatterParse,
-  h,
-  join,
-  PageConfig,
-  PageProps,
-  tw,
-  useData,
-} from "../../deps.ts";
+import { h, join, PageConfig, PageProps, tw, useData } from "../../deps.ts";
 import { prepareMarkdown, renderMarkdown } from "../../utils/markdown.ts";
 
 export const config: PageConfig = { runtimeJS: false };

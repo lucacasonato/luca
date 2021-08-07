@@ -12,7 +12,7 @@ if (IS_BROWSER) {
 // x/ammonia & x/comrak
 import * as ammonia from "https://deno.land/x/ammonia@0.3.0/mod.ts";
 import * as comrak from "https://deno.land/x/comrak@0.1.0/mod.ts";
-await Promise.all([ammonia.init(), comrak.init()]);
+// await Promise.all([ammonia.init(), comrak.init()]);
 export { ammonia, comrak };
 
 // std
