@@ -1,3 +1,5 @@
+/** @jsx h */
+
 import { h, PageConfig, tw } from "../deps.ts";
 
 export const config: PageConfig = { runtimeJS: false };

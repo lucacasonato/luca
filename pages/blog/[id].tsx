@@ -1,12 +1,6 @@
-import {
-  frontmatterParse,
-  h,
-  join,
-  PageConfig,
-  PageProps,
-  tw,
-  useData,
-} from "../../deps.ts";
+/** @jsx h */
+
+import { h, join, PageConfig, PageProps, tw, useData } from "../../deps.ts";
 import { prepareMarkdown, renderMarkdown } from "../../utils/markdown.ts";
 
 export const config: PageConfig = { runtimeJS: false };
@@ -26,7 +20,7 @@ async function fromDisk(path: string): Promise<string | null> {
 export default function BlogPage(props: PageProps) {
   const markdown = useData(`/posts/${props.params.id}.md`, fromDisk);
   if (!markdown) {
-    return "Blog post not found";
+    return <p>Blog post not found</p>;
   }
   const { content, data } = prepareMarkdown<{ title: string; date: string }>(
     markdown,
