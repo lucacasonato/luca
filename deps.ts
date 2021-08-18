@@ -15,17 +15,17 @@ if (IS_BROWSER) {
 }
 
 // x/comrak
-import * as comrak from "https://deno.land/x/comrak@0.1.0/mod.ts";
+import * as comrak from "https://deno.land/x/comrak@0.1.1/mod.ts";
 await comrak.init();
 export { comrak };
 
 // x/ammonia
-import * as ammonia from "https://deno.land/x/ammonia@0.3.0/mod.ts";
+import * as ammonia from "https://deno.land/x/ammonia@0.3.1/mod.ts";
 await ammonia.init();
 export { ammonia };
 
 // std
-export { join } from "https://deno.land/std@0.103.0/path/mod.ts";
+export { join } from "https://deno.land/std@0.105.0/path/mod.ts";
 
 // frontmatter
 export { parse as frontmatterParse } from "https://deno.land/x/frontmatter@v0.1.2/mod.ts";
