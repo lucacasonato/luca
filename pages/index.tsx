@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, PageConfig, tw } from "../deps.ts";
+import { h, Head, PageConfig, tw } from "../deps.ts";
 
 export const config: PageConfig = { runtimeJS: false };
 
@@ -11,6 +11,14 @@ export default function Home() {
     <div
       class={tw`mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}
     >
+      <Head>
+        <title>Home - Luca Casonato</title>
+        <meta
+          name="description"
+          content="Software person. @deno_land core team. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"
+        />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+      </Head>
       <div class={tw`flex flex(col sm:row)`}>
         <img
           src="/me.jpg"
