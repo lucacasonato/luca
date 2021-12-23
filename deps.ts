@@ -1,7 +1,5 @@
-export * from "https://raw.githubusercontent.com/lucacasonato/fresh/03057623c903c936a48597e03f7ee0d9244c6cab/runtime.ts";
-import { IS_BROWSER } from "https://raw.githubusercontent.com/lucacasonato/fresh/03057623c903c936a48597e03f7ee0d9244c6cab/runtime.ts";
-import { setup, tw } from "https://esm.sh/twind";
-export { setup, tw };
-if (IS_BROWSER) {
-  setup({});
-}
+export * from "https://raw.githubusercontent.com/lucacasonato/fresh/95d011566fc3c5ac150e2f2ebb70d30faaa05b7b/runtime.ts";
+export * from "https://raw.githubusercontent.com/lucacasonato/fresh/95d011566fc3c5ac150e2f2ebb70d30faaa05b7b/server.ts";
+
+export { setup, tw } from "https://esm.sh/twind@0.16.16";
+export { virtualSheet } from "https://esm.sh/twind@0.16.16/sheets";
