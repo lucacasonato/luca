@@ -39,13 +39,13 @@ const CV: CVItem[] = [
   },
 ];
 
-export default function Work() {
+export default function CVPage() {
   return (
     <div
       class={tw`mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}
     >
       <Head>
-        <title>Work - Luca Casonato</title>
+        <title>CV - Luca Casonato</title>
         <meta
           name="description"
           content="Software person. @deno_land core team. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"

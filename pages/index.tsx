@@ -21,7 +21,7 @@ export default function Home() {
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <div class={tw`flex flex(col sm:row)`}>
+      <div class={tw`flex flex(col sm:row) gap-8`}>
         <img
           src="/me.jpg"
           alt="luca casonato"
@@ -29,7 +29,7 @@ export default function Home() {
           height="500"
           class={tw`w(24 md:32) h(24 md:32) rounded-full`}
         />
-        <div class={tw`mt(8 sm:0) sm:ml-8 flex flex-col justify-center`}>
+        <div class={tw`flex flex-col justify-center`}>
           <p class={tw`leading-tight text(gray-900 2xl md:3xl)`}>
             Hello, I'm
           </p>
