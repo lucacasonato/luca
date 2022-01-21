@@ -102,6 +102,15 @@ export default function CVPage() {
           <ul class={tw`mt-6 text-lg space-y-2`}>
             <li>
               <a
+                href="https://github.com/denoland/deno"
+                class={tw`font-semibold hover:underline`}
+              >
+                deno
+              </a>{" "}
+              - a modern runtime for JavaScript and TypeScript.
+            </li>
+            <li>
+              <a
                 href="https://github.com/lucacasonato/fresh"
                 class={tw`font-semibold hover:underline`}
               >
