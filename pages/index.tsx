@@ -91,6 +91,11 @@ export default function Home() {
           title="Twitter"
           icon={TwitterIcon}
         />
+        <IconLink
+          href="https://mastodon.social/@lcasdev"
+          title="Mastodon"
+          icon={MastodonIcon}
+        />
       </div>
     </div>
   );
