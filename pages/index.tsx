@@ -1,5 +1,5 @@
 /** @jsx h */
-import { GitHubIcon, TwitterIcon } from "../components/Icons.tsx";
+import { GitHubIcon, TwitterIcon, MastodonIcon } from "../components/Icons.tsx";
 import { IconLink } from "../components/Icons.tsx";
 import { h, Head, PageConfig, tw } from "../deps.ts";
 
@@ -90,6 +90,12 @@ export default function Home() {
           href="https://twitter.com/lcasdev"
           title="Twitter"
           icon={TwitterIcon}
+        />
+        <IconLink
+          href="https://mastodon.social/@lcasdev"
+          title="Mastodon"
+          rel="me"
+          icon={MastodonIcon}
         />
       </div>
     </div>
