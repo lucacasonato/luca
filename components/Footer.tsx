@@ -1,6 +1,7 @@
 /** @jsx h */
 import { h, tw } from "../deps.client.ts";
 import { GitHubIcon, IconLink, TwitterIcon } from "./Icons.tsx";
+import { SocialLinks } from "./SocialLinks.tsx";
 
 export function Footer() {
   return (
@@ -22,20 +23,9 @@ export function Footer() {
           Software person.{" "}
           <a href="https://deno.com/blog/the-deno-company">@deno_land</a>{" "}
           core team. <a href="https://tc39.es">@tc39</a>{" "}
-          delegate. he/him 🏳️‍🌈 🌍 🌻 💚
+          delegate. he/him 🏳️‍🌈&nbsp;🌍&nbsp;🌻&nbsp;💚
         </p>
-        <div class={tw`flex gap-2`}>
-          <IconLink
-            href="https://github.com/lucacasonato"
-            title="GitHub"
-            icon={GitHubIcon}
-          />
-          <IconLink
-            href="https://twitter.com/lcasdev"
-            title="Twitter"
-            icon={TwitterIcon}
-          />
-        </div>
+        <SocialLinks class="mt-1" tight />
       </div>
     </div>
   );

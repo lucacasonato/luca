@@ -3,6 +3,7 @@ import { h, Head, tw } from "../deps.client.ts";
 
 import { GitHubIcon, MastodonIcon, TwitterIcon } from "../components/Icons.tsx";
 import { IconLink } from "../components/Icons.tsx";
+import { SocialLinks } from "../components/SocialLinks.tsx";
 
 export default function Home() {
   const linkClass = tw
@@ -79,24 +80,7 @@ export default function Home() {
         </a>
         .
       </div>
-      <div class={tw`mt-10 flex gap-4`}>
-        <IconLink
-          href="https://github.com/lucacasonato"
-          title="GitHub"
-          icon={GitHubIcon}
-        />
-        <IconLink
-          href="https://twitter.com/lcasdev"
-          title="Twitter"
-          icon={TwitterIcon}
-        />
-        <IconLink
-          href="https://mastodon.social/@lcasdev"
-          title="Mastodon"
-          rel="me"
-          icon={MastodonIcon}
-        />
-      </div>
+      <SocialLinks class="mt-10" />
     </div>
   );
 }
