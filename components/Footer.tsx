@@ -1,5 +1,5 @@
 /** @jsx h */
-import { h, tw } from "../deps.ts";
+import { h, tw } from "../deps.client.ts";
 import { GitHubIcon, IconLink, TwitterIcon } from "./Icons.tsx";
 
 export function Footer() {

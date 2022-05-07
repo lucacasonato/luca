@@ -1,6 +1,7 @@
 // This module adds twind support.
 
-import { RenderContext, RenderFn, setup, virtualSheet } from "../deps.ts";
+import { setup } from "../deps.client.ts";
+import { RenderContext, RenderFn, virtualSheet } from "../deps.server.ts";
 
 const sheet = virtualSheet();
 sheet.reset();

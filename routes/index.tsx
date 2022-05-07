@@ -1,9 +1,8 @@
 /** @jsx h */
-import { GitHubIcon, TwitterIcon, MastodonIcon } from "../components/Icons.tsx";
-import { IconLink } from "../components/Icons.tsx";
-import { h, Head, PageConfig, tw } from "../deps.ts";
+import { h, Head, tw } from "../deps.client.ts";
 
-export const config: PageConfig = { runtimeJS: false };
+import { GitHubIcon, MastodonIcon, TwitterIcon } from "../components/Icons.tsx";
+import { IconLink } from "../components/Icons.tsx";
 
 export default function Home() {
   const linkClass = tw

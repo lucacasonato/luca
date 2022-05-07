@@ -4,7 +4,7 @@
 /// <reference lib="deno.ns" />
 /// <reference lib="deno.unstable" />
 
-import { start } from "./deps.ts";
-import routes from "./routes.gen.ts";
+import { start } from "./deps.server.ts";
+import manifest from "./fresh.gen.ts";
 
-start(routes);
+start(manifest);

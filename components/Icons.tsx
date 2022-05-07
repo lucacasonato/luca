@@ -1,5 +1,5 @@
 /** @jsx h */
-import { ComponentType, h, tw } from "../deps.ts";
+import { ComponentType, h, tw } from "../deps.client.ts";
 
 export function GitHubIcon() {
   return (

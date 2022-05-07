@@ -1,8 +1,7 @@
 /** @jsx h */
-import { Footer } from "../components/Footer.tsx";
-import { h, Head, PageConfig, tw } from "../deps.ts";
+import { h, Head, tw } from "../deps.client.ts";
 
-export const config: PageConfig = { runtimeJS: false };
+import { Footer } from "../components/Footer.tsx";
 
 interface CVItem {
   start: Date;
@@ -90,8 +89,8 @@ export default function CVPage() {
               <b>large open source projects</b>. I am a core team member of the
               {" "}
               <b>Deno project</b>{" "}
-              which has over 650 contributors and over 6800 commits. We work
-              through an average of 120 pull requests and 70 new issues a month.
+              which has over 700 contributors and over 7300 commits. We work
+              through an average of 150 pull requests and 90 new issues a month.
             </li>
           </ul>
         </div>
@@ -158,15 +157,20 @@ function Item(props: { item: CVItem }) {
     ? startYear
     : `${startYear} - ${endYear}`;
 
-  const yearDuration = end.getFullYear() - start.getFullYear();
-  const monthDuration = end.getMonth() - start.getMonth();
+  const startMonths = start.getFullYear() * 12 + start.getMonth();
+  const endMonths = end.getFullYear() * 12 + end.getMonth();
+
+  const monthDuration = endMonths - startMonths;
+
+  const years = Math.floor(monthDuration / 12);
+  const months = monthDuration % 12;
 
   let duration = "";
-  if (yearDuration > 0) {
-    duration += `${yearDuration} year${yearDuration > 1 ? "s" : ""} `;
+  if (years > 0) {
+    duration += `${years} year${years > 1 ? "s" : ""} `;
   }
-  if (monthDuration > 0 && yearDuration < 2) {
-    duration += `${monthDuration} month${monthDuration > 1 ? "s" : ""} `;
+  if (months > 0 && years < 2) {
+    duration += `${months} month${months > 1 ? "s" : ""} `;
   }
 
   return (
