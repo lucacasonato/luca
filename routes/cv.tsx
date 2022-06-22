@@ -91,7 +91,7 @@ export default function CVPage() {
               <b>large open source projects</b>. I am a core team member of the
               {" "}
               <b>Deno project</b>{" "}
-              which has over 700 contributors and over 7300 commits. We work
+              which has over 700 contributors and over 7400 commits. We work
               through an average of 150 pull requests and 90 new issues a month.
             </li>
           </ul>
