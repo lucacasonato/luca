@@ -1,6 +1,6 @@
 /** @jsx h */
-import { h, tw } from "../deps.client.ts";
-import { GitHubIcon, IconLink, TwitterIcon } from "./Icons.tsx";
+import { h } from "preact";
+import { tw } from "@twind";
 import { SocialLinks } from "./SocialLinks.tsx";
 
 export function Footer() {

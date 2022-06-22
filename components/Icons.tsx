@@ -1,5 +1,6 @@
 /** @jsx h */
-import { ComponentType, h, tw } from "../deps.client.ts";
+import { ComponentType, h } from "preact";
+import { tw } from "@twind";
 
 export function GitHubIcon() {
   return (

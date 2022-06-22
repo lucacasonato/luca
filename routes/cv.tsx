@@ -1,5 +1,7 @@
 /** @jsx h */
-import { h, Head, tw } from "../deps.client.ts";
+import { h } from "preact";
+import { tw } from "@twind";
+import { Head } from "$fresh/runtime.ts";
 
 import { Footer } from "../components/Footer.tsx";
 
