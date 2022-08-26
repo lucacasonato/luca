@@ -1,7 +1,5 @@
 {
   "imports": {
-    "@twind": "./utils/twind.ts",
-
     "$fresh/": "https://raw.githubusercontent.com/denoland/fresh/b12867a5823a338b318b14f1b6e399e61064dce9/",
     "preact": "https://esm.sh/preact@10.10.6",
     "preact/": "https://esm.sh/preact@10.10.6/",
