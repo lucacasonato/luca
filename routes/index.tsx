@@ -18,7 +18,6 @@ box-shadow: 0px 6px #e40303,
 `;
 
 export default function Home() {
-  const showRainbow = Math.random() < 0.5;
   return (
     <div class="mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)">
       <Head>
@@ -90,15 +89,8 @@ export default function Home() {
         .
       </div>
       <div class="flex items-center mt-12 h-10">
-        <div
-          class={tw(rainbow) +
-            " mr-[0.5rem] ml-[-100.5rem] sm:(mr-[1rem] ml-[-101rem]) w-[100rem] z-[-1]"}
-        />
-        <SocialLinks />
-        <div
-          class={tw(rainbow) +
-            " ml-[0.5rem] sm:ml-[1rem] mr-[-100rem] w-[100rem]"}
-        />
+        <div class={tw(rainbow) + " absolute left-0 right-0 w-screen z-[-1]"} />
+        <SocialLinks class="bg-white ml-[-0.5rem] px-[0.5rem] sm:(ml-[-1rem] px-[1rem]) h-10" />
       </div>
     </div>
   );
