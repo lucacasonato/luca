@@ -1,6 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
 import { Head } from "$fresh/runtime.ts";
 
 import { Footer } from "../components/Footer.tsx";
@@ -15,12 +12,12 @@ interface CVItem {
 
 const CV: CVItem[] = [
   {
-    start: new Date(2017, 5),
-    end: new Date(2020, 8),
-    title: "Web Developer",
-    company: "freelance",
+    start: new Date(2020, 7),
+    end: null,
+    title: "Software Engineer",
+    company: "Deno Land Inc",
     description:
-      "HTML + CSS + JS websites / webapps for various clients. Various backend services using Go and Node.js on GCP. Specialized on fast websites.",
+      "Architecture & engineering on the open source Deno project, the Deno Deploy hosting service, and the Fresh framework. I also facilitate communication with web standards bodies (WHATWG, W3C) and am a delegate at TC39.",
   },
   {
     start: new Date(2019, 5),
@@ -31,20 +28,18 @@ const CV: CVItem[] = [
       "Introduced new version control scheme and more CI workflows. Also worked on in-house iOS apps using Flutter.",
   },
   {
-    start: new Date(2020, 7),
-    end: null,
-    title: "Software Engineer",
-    company: "Deno Land Inc",
+    start: new Date(2017, 5),
+    end: new Date(2020, 8),
+    title: "Web Developer",
+    company: "freelance",
     description:
-      "Engineering on the open source Deno project, and the Deno Deploy hosting service. I also facilitate communication with web standards bodies (WHATWG, W3C) and am a delegate at TC39.",
+      "HTML + CSS + JS websites / webapps for various clients. Various backend services using Go and Node.js on GCP. Specialized on fast websites.",
   },
 ];
 
 export default function CVPage() {
   return (
-    <div
-      class={tw`mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}
-    >
+    <div class="mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)">
       <Head>
         <title>CV - Luca Casonato</title>
         <meta
@@ -53,23 +48,23 @@ export default function CVPage() {
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <div class={tw`mb-24 space-y(8 md:12)`}>
-        <h1 class={tw`leading-tight text(gray-900 4xl md:5xl) font-bold`}>
+      <div class="mb-24 space-y(8 md:12)">
+        <h1 class="leading-tight text(gray-900 4xl md:5xl) font-bold">
           Curriculum vitae
         </h1>
         <div>
-          <h2 class={tw`leading-tight text(gray-900 3xl) font-semibold`}>
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
             Jobs
           </h2>
-          <ul class={tw`mt-6 text-lg space-y-4`}>
+          <ul class="mt-6 text-lg space-y-4">
             {CV.map((item) => <Item item={item} />)}
           </ul>
         </div>
         <div>
-          <h2 class={tw`leading-tight text(gray-900 3xl) font-semibold`}>
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
             Skills
           </h2>
-          <ul class={tw`mt-6 text-lg space-y-4`}>
+          <ul class="mt-6 text-lg space-y-4">
             <li>
               Highly provicient in <b>Rust</b>, <b>JavaScript</b>,{" "}
               <b>TypeScript</b>, <b>Go</b>, <b>HTML</b>, and{" "}
@@ -91,20 +86,20 @@ export default function CVPage() {
               <b>large open source projects</b>. I am a core team member of the
               {" "}
               <b>Deno project</b>{" "}
-              which has over 700 contributors and over 7400 commits. We work
+              which has over 730 contributors and over 7700 commits. We work
               through an average of 150 pull requests and 90 new issues a month.
             </li>
           </ul>
         </div>
         <div>
-          <h2 class={tw`leading-tight text(gray-900 3xl) font-semibold`}>
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
             Projects
           </h2>
-          <ul class={tw`mt-6 text-lg space-y-2`}>
+          <ul class="mt-6 text-lg space-y-2">
             <li>
               <a
                 href="https://github.com/denoland/deno"
-                class={tw`font-semibold hover:underline`}
+                class="font-semibold hover:underline"
               >
                 deno
               </a>{" "}
@@ -112,8 +107,8 @@ export default function CVPage() {
             </li>
             <li>
               <a
-                href="https://github.com/lucacasonato/fresh"
-                class={tw`font-semibold hover:underline`}
+                href="https://fresh.deno.dev"
+                class="font-semibold hover:underline"
               >
                 fresh
               </a>{" "}
@@ -123,7 +118,7 @@ export default function CVPage() {
             <li>
               <a
                 href="https://github.com/lucacasonato/deno_aws_sign_v4"
-                class={tw`font-semibold hover:underline`}
+                class="font-semibold hover:underline"
               >
                 deno_aws_sign_v4
               </a>{" "}
@@ -132,7 +127,7 @@ export default function CVPage() {
             <li>
               <a
                 href="https://github.com/lucacasonato/deno_s3"
-                class={tw`font-semibold hover:underline`}
+                class="font-semibold hover:underline"
               >
                 deno_s3
               </a>{" "}
@@ -176,16 +171,16 @@ function Item(props: { item: CVItem }) {
   }
 
   return (
-    <li class={tw`grid grid-cols-7 gap-x-2 gap-y-1`}>
-      <span class={tw`col-span-2 font-semibold`}>{timeframe}</span>
-      <span class={tw`col-span-3 font-bold`}>{props.item.title}</span>
-      <span class={tw`col-span-2`}>
+    <li class="grid grid-cols-7 gap-x-2 gap-y-1">
+      <span class="col-span-2 font-semibold">{timeframe}</span>
+      <span class="col-span-3 font-bold">{props.item.title}</span>
+      <span class="col-span-2">
         {props.item.company === "freelance"
           ? <i>{props.item.company}</i>
           : props.item.company}
       </span>
-      <span class={tw`col-span-2 italic text-base`}>{duration}</span>
-      <span class={tw`col-span-5 text-base`}>{props.item.description}</span>
+      <span class="col-span-2 italic text-base">{duration}</span>
+      <span class="col-span-5 text-base">{props.item.description}</span>
     </li>
   );
 }

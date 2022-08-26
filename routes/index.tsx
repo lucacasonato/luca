@@ -1,18 +1,26 @@
-/** @jsx h */
-import { h } from "preact";
-import { tw } from "@twind";
+import { tw } from "twind";
+import { css } from "twind/css";
 import { Head } from "$fresh/runtime.ts";
 
 import { SocialLinks } from "../components/SocialLinks.tsx";
 
-export default function Home() {
-  const linkClass = tw
-    `text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out`;
+const linkClass =
+  "text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out";
+const rainbow = css`
+height: 6px;
+margin-bottom: 42px;
+box-shadow: 0px 6px #e40303,
+  0px 12px #ff8c00,
+  0px 18px #ffed00,
+  0px 24px #008026,
+  0px 30px #004dff,
+  0px 36px #750787;
+`;
 
+export default function Home() {
+  const showRainbow = Math.random() < 0.5;
   return (
-    <div
-      class={tw`mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)`}
-    >
+    <div class="mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)">
       <Head>
         <title>Home - Luca Casonato</title>
         <meta
@@ -21,45 +29,46 @@ export default function Home() {
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <div class={tw`flex flex(col sm:row) gap-8`}>
-        <img
-          src="/me.jpg"
-          alt="luca casonato"
-          width="500"
-          height="500"
-          class={tw`w(24 md:32) h(24 md:32) rounded-full`}
-        />
-        <div class={tw`flex flex-col justify-center`}>
-          <p class={tw`leading-tight text(gray-900 2xl md:3xl)`}>
+      <div class="flex flex(col sm:row) gap-8 w-full">
+        <div class="flex justify-between items-center">
+          <img
+            src="/me.jpg"
+            alt="luca casonato"
+            width="500"
+            height="500"
+            class="w(24 md:32) h(24 md:32) rounded-full bg-white"
+          />
+        </div>
+        <div class="flex flex-col justify-center">
+          <p class="leading-tight text(gray-900 2xl md:3xl)">
             Hello, I'm
           </p>
-          <h1 class={tw`leading-tight text(gray-900 4xl md:5xl) font-semibold`}>
-            Luca Casonato
-          </h1>
+          <div class="flex items-center">
+            <h1 class="leading-tight text(gray-900 4xl md:5xl) font-semibold">
+              Luca Casonato
+            </h1>
+          </div>
         </div>
       </div>
-      <div class={tw`mt-10 leading-7 text(gray-900 lg)`}>
+      <div class="mt-16 leading-7 text(gray-900 lg)">
         I'm a developer and{" "}
         <a href="https://github.com/lucacasonato" class={linkClass}>
           open source enthusiast
         </a>
         . I like Rust, Go, TypeScript, and fast websites. I work at the{" "}
         <a href="https://deno.com/blog/the-deno-company" class={linkClass}>
-          Deno
-        </a>{" "}
-        company, building{" "}
+          Deno company
+        </a>, building{" "}
         <a href="https://deno.land" class={linkClass}>
           Deno
-        </a>{" "}
-        and{" "}
+        </a>,{" "}
         <a href="https://deno.com/deploy" class={linkClass}>
           Deno Deploy
-        </a>, and serving as a delegate at{" "}
-        <a href="https://tc39.es" class={linkClass}>TC39</a>. I built{" "}
-        <a href="https://github.com/lucacasonato/fresh" class={linkClass}>
-          fresh
-        </a>
-        ,{" "}
+        </a>, and{" "}
+        <a href="https://fresh.deno.dev" class={linkClass}>
+          Fresh
+        </a>. I also serve as a delegate at{" "}
+        <a href="https://tc39.es" class={linkClass}>TC39</a>. I build{" "}
         <a
           href="https://github.com/lucacasonato/deno-puppeteer"
           class={linkClass}
@@ -69,7 +78,7 @@ export default function Home() {
         , and a few other open source libraries. Probably reading some web spec
         right now.
       </div>
-      <div class={tw`mt-10 leading-7 text(lg gray-900)`}>
+      <div class="mt-10 leading-7 text(lg gray-900)">
         Wanna talk about something? DM me on{" "}
         <a href="https://twitter.com/lcasdev" class={linkClass}>
           Twitter
@@ -80,7 +89,17 @@ export default function Home() {
         </a>
         .
       </div>
-      <SocialLinks class="mt-10" />
+      <div class="flex items-center mt-12 h-10">
+        <div
+          class={tw(rainbow) +
+            " mr-[0.5rem] ml-[-100.5rem] sm:(mr-[1rem] ml-[-101rem]) w-[100rem] z-[-1]"}
+        />
+        <SocialLinks />
+        <div
+          class={tw(rainbow) +
+            " ml-[0.5rem] sm:ml-[1rem] mr-[-100rem] w-[100rem]"}
+        />
+      </div>
     </div>
   );
 }

@@ -9,7 +9,8 @@
     "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "extensions": [
-    "denoland.vscode-deno"
+    "denoland.vscode-deno",
+    "sastan.twind-intellisense"
   ],
   "remoteUser": "vscode"
 }
