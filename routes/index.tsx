@@ -78,9 +78,9 @@ export default function Home() {
         right now.
       </div>
       <div class="mt-10 leading-7 text(lg gray-900)">
-        Wanna talk about something? DM me on{" "}
-        <a href="https://twitter.com/lcasdev" class={linkClass}>
-          Twitter
+        Wanna talk about something? Message me on{" "}
+        <a href="https://mastodon.social/@lcasdev" class={linkClass}>
+          Mastodon
         </a>{" "}
         or email me at{" "}
         <a href="mailto:hello@lcas.dev" class={linkClass}>
