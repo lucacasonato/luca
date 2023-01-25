@@ -17,7 +17,7 @@ const CV: CVItem[] = [
     title: "Software Engineer",
     company: "Deno Land Inc",
     description:
-      "Architecture & engineering on the open source Deno project, the Deno Deploy hosting service, and the Fresh framework. I also facilitate communication with web standards bodies (WHATWG, W3C) and am a delegate at TC39.",
+      "Tech lead for the Deno Deploy edge platform. Engineering on the open source Deno project. Built the Fresh web framework. I also facilitate communication with web standards bodies (WHATWG, W3C) and am a delegate at TC39.",
   },
   {
     start: new Date(2019, 5),
