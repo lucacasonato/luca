@@ -9,7 +9,7 @@
     "jsxImportSource": "preact"
   },
   "imports": {
-    "$fresh/": "https://deno.land/x/fresh@1.4.2/",
+    "$fresh/": "https://raw.githubusercontent.com/denoland/fresh/5532aa5e0e597f2ab668b7f7a58aec378d38c360/",
     "preact": "npm:preact@^10",
     "preact/": "npm:/preact@^10/",
     "preact-render-to-string": "npm:preact-render-to-string@^6",
