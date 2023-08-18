@@ -3,6 +3,7 @@ import { css } from "twind/css";
 import { Head } from "$fresh/runtime.ts";
 
 import { SocialLinks } from "../components/SocialLinks.tsx";
+import { Counter } from "../islands/Counter.tsx";
 
 const linkClass =
   "text-blue(600 hover:500) hover:underline transition duration-75 ease-in-out";
@@ -88,6 +89,7 @@ export default function Home() {
         </a>
         .
       </div>
+      <Counter />
       <div class="flex items-center mt-12 h-10">
         <div class={tw(rainbow) + " absolute left-0 right-0 w-screen z-[-1]"} />
         <SocialLinks class="bg-white ml-[-0.5rem] px-[0.5rem] sm:(ml-[-1rem] px-[1rem]) h-10" />

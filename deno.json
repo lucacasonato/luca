@@ -15,7 +15,8 @@
     "preact-render-to-string": "npm:preact-render-to-string@^6",
     "twind": "npm:twind@^0.16",
     "twind/": "npm:/twind@^0.16/",
-    "@preact/signals": "npm:@preact/signals@^1"
+    "@preact/signals": "npm:@preact/signals@^1",
+    "https://deno.land/x/esbuild_deno_loader@0.8.1/": "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/"
   },
   "lint": {
     "rules": {

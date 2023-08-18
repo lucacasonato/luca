@@ -304,10 +304,19 @@
     "https://esm.sh/v125/style-vendorizer@2.2.3/denonext/style-vendorizer.mjs": "121455e7b04b631ef6463ce63cdcd29febd74d88c37713c774ceca8a1561c83d",
     "https://esm.sh/v125/twind@0.16.19/denonext/css.js": "4ff597e4f6fe5cc77a4bed38284ee819bd6ad334893ba06543d856da81614ba1",
     "https://esm.sh/v125/twind@0.16.19/denonext/twind.mjs": "922ffbbbf2805c038bf62ddc362796de72dfa4ee3d2407088771e8c5c9c7d731",
-    "https://esm.sh/v131/preact-render-to-string@6.2.1/X-ZS8q/denonext/preact-render-to-string.mjs": "7a5a7c19872e0cb93fe6aa398c20510b3d9f34bd6565c0ccc30cb1a90d53a6c4"
+    "https://esm.sh/v131/preact-render-to-string@6.2.1/X-ZS8q/denonext/preact-render-to-string.mjs": "7a5a7c19872e0cb93fe6aa398c20510b3d9f34bd6565c0ccc30cb1a90d53a6c4",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/deps.ts": "987b50a1a921fcc84ddfcf1a1256cb955f6b16acac28a3fc77901c12c0752173",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/mod.ts": "28524460bef46d487221b01ade6ed913d2e127de7eeee025ab75b34b491283da",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/deno.ts": "b0af3e430c068f18c6fa48c2083a1b4354b6c303e16fb37855e02fcafb95f36d",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/loader_native.ts": "3ffab59d0ed26c9329b2b84e0a775be5a910b7fed403a46edf4d2c3c8feb8b5a",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/loader_portable.ts": "d999f452ef3d8ec2dd3c8443f542adf57efc8a2cd59b29cc41f5b3d7dff512e5",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/plugin_deno_loader.ts": "166356133ee63d80e5559a10c18e10b625da96e39a4518b8c7adfef718bb4e32",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/plugin_deno_resolver.ts": "0449ed23ae93db1ec74d015a46934aefd7ba7a8f719f7a4980b616cb3f5bbee4",
+    "https://raw.githubusercontent.com/lucacasonato/esbuild_deno_loader/e0941bd9f71e9a72fcbda557aa2d251b266feeaa/src/shared.ts": "33052684aeb542ebd24da372816bbbf885cd090a7ab0fde7770801f7f5b49572"
   },
   "npm": {
     "specifiers": {
+      "@preact/signals@^1": "@preact/signals@1.1.3_preact@10.15.1",
       "preact": "preact@10.15.1",
       "preact-render-to-string@6.2.1": "preact-render-to-string@6.2.1_preact@10.15.1",
       "preact-render-to-string@^6": "preact-render-to-string@6.2.1_preact@10.15.1",
@@ -318,6 +327,17 @@
       "twind@^0.16": "twind@0.16.19"
     },
     "packages": {
+      "@preact/signals-core@1.3.0": {
+        "integrity": "sha512-M+M3ZOtd1dtV/uasyk4SZu1vbfEJ4NeENv0F7F12nijZYedB5wSgbtZcuACyssnTznhF4ctUyrR0dZHuHfyWKA==",
+        "dependencies": {}
+      },
+      "@preact/signals@1.1.3_preact@10.15.1": {
+        "integrity": "sha512-N09DuAVvc90bBZVRwD+aFhtGyHAmJLhS3IFoawO/bYJRcil4k83nBOchpCEoS0s5+BXBpahgp0Mjf+IOqP57Og==",
+        "dependencies": {
+          "@preact/signals-core": "@preact/signals-core@1.3.0",
+          "preact": "preact@10.15.1"
+        }
+      },
       "csstype@3.1.2": {
         "integrity": "sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==",
         "dependencies": {}
