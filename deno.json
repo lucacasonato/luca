@@ -1,10 +1,29 @@
 {
   "tasks": {
-    "start": "deno run -A --watch=static/,routes/ dev.ts"
+    "start": "deno run -A --watch=static/,routes/ dev.ts",
+    "build": "deno run -A dev.ts build",
+    "preview": "deno run -A main.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "importMap": "./import_map.json"
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.4.2/",
+    "preact": "npm:preact@^10",
+    "preact/": "npm:/preact@^10/",
+    "preact-render-to-string": "npm:preact-render-to-string@^6",
+    "twind": "npm:twind@^0.16",
+    "twind/": "npm:/twind@^0.16/",
+    "@preact/signals": "npm:@preact/signals@^1"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["fresh", "recommended"]
+    },
+    "exclude": ["_fresh"]
+  },
+  "fmt": {
+    "exclude": ["_fresh"]
+  }
 }
