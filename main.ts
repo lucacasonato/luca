@@ -10,4 +10,6 @@ import manifest from "./fresh.gen.ts";
 import twindPlugin from "$fresh/plugins/twind.ts";
 import twindConfig from "./twind.config.js";
 
+throw new Error("This file should not be imported");
+
 await start(manifest, { plugins: [twindPlugin(twindConfig)] });
