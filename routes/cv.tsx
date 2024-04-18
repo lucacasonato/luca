@@ -17,7 +17,7 @@ const CV: CVItem[] = [
     title: "Lead Software Engineer",
     company: "Deno Land Inc",
     description:
-      "Various positions, including technical lead for the Deno Deploy edge compute platform. Engineering on the open source Deno project. Built the Fresh web framework. I facilitate communication with web standards bodies (WHATWG, W3C) and am a delegate at TC39.",
+      "Lead for JSR (JavaScript Registry) project. Previously technical lead for the Deno Deploy edge compute platform. Engineering on the open source Deno project. Built the Fresh web framework. Work in web standards bodies (WHATWG, W3C) and delegate at TC39 (committee that designs the JavaScript language).",
   },
   {
     start: new Date(2019, 5),
@@ -44,7 +44,7 @@ export default function CVPage() {
         <title>CV - Luca Casonato</title>
         <meta
           name="description"
-          content="Software person. @deno_land core team. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"
+          content="Software person. @deno_land core team. @jsr project lead. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
@@ -66,10 +66,21 @@ export default function CVPage() {
           </h2>
           <ul class="mt-6 text-lg space-y-4">
             <li>
-              Highly provicient in <b>Rust</b>, <b>JavaScript</b>,{" "}
+              Highly proficient in <b>Rust</b>, <b>JavaScript</b>,{" "}
               <b>TypeScript</b>, <b>Go</b>, <b>HTML</b>, and{" "}
               <b>CSS</b>. Experience with <b>Dart</b>, <b>Java</b>, and{" "}
               <b>C++</b>.
+            </li>
+            <li>
+              Experienced in <b>web development</b>, <b>systems programming</b>,
+              {" "}
+              <b>networking</b>, and{" "}
+              <b>cloud computing</b>. Significant experience with <b>React</b>,
+              {" "}
+              <b>Preact</b>, <b>TailwindCSS</b>, <b>Deno</b>, <b>Node.js</b>,
+              {" "}
+              <b>PostgreSQL</b>, <b>Google Cloud Platform</b>,{" "}
+              <b>Open Telemetry</b>, and <b>Grafana</b>.
             </li>
             <li>
               Intimately familiar with the <b>web platform</b> and{" "}
@@ -78,16 +89,17 @@ export default function CVPage() {
               TC39.
             </li>
             <li>
-              Capable of architechting and implementing <b>scalable</b> and{" "}
+              Capable of architecting and implementing <b>scalable</b> and{" "}
               <b>performant</b> web services.
             </li>
             <li>
-              Signficant experience in managing and maintaining{" "}
+              Significant experience in managing and maintaining{" "}
               <b>large open source projects</b>. I am a core team member of the
               {" "}
               <b>Deno project</b>{" "}
-              which has over 730 contributors and over 7700 commits. We work
-              through an average of 150 pull requests and 90 new issues a month.
+              which has over 900 contributors and over 11200 commits. We work
+              through an average of 220 pull requests and 150 new issues a
+              month.
             </li>
           </ul>
         </div>
@@ -107,31 +119,22 @@ export default function CVPage() {
             </li>
             <li>
               <a
+                href="https://jsr.io"
+                class="font-semibold hover:underline"
+              >
+                jsr
+              </a>{" "}
+              - a modern package registry for JavaScript and TypeScript.
+            </li>
+            <li>
+              <a
                 href="https://fresh.deno.dev"
                 class="font-semibold hover:underline"
               >
                 fresh
               </a>{" "}
-              - a web framework for building very fast websites without needing
-              a build step.
-            </li>
-            <li>
-              <a
-                href="https://github.com/lucacasonato/deno_aws_sign_v4"
-                class="font-semibold hover:underline"
-              >
-                deno_aws_sign_v4
-              </a>{" "}
-              - generate AWS Signature V4 for AWS low-level REST APIs.
-            </li>
-            <li>
-              <a
-                href="https://github.com/lucacasonato/deno_s3"
-                class="font-semibold hover:underline"
-              >
-                deno_s3
-              </a>{" "}
-              - Amazon S3 for Deno.
+              - a web framework for building very fast websites with great
+              developer experience.
             </li>
           </ul>
         </div>

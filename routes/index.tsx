@@ -24,7 +24,7 @@ export default function Home() {
         <title>Home - Luca Casonato</title>
         <meta
           name="description"
-          content="Software person. @deno_land core team. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"
+          content="Software person. @deno_land core team.  @jsr project lead. @tc39 delegate. he/him 🏳️‍🌈🌍🌻💚"
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
@@ -61,14 +61,20 @@ export default function Home() {
           </a>, building{" "}
           <a href="https://deno.land" class={linkClass}>
             Deno
-          </a>,{" "}
+          </a>{" "}
+          and{" "}
           <a href="https://deno.com/deploy" class={linkClass}>
             Deno Deploy
-          </a>, and{" "}
+          </a>, leading the <a href="https://jsr.io" class={linkClass}>JSR</a>
+          {" "}
+          project, and contributing to{" "}
           <a href="https://fresh.deno.dev" class={linkClass}>
             Fresh
           </a>. I also serve as a delegate at{" "}
-          <a href="https://tc39.es" class={linkClass}>TC39</a>. I build{" "}
+          <a href="https://tc39.es" class={linkClass}>TC39</a> and am a chair of
+          {" "}
+          <a href="https://wintercg.org" class={linkClass}>WinterCG</a>. I built
+          {" "}
           <a
             href="https://github.com/lucacasonato/deno-puppeteer"
             class={linkClass}

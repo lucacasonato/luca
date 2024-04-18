@@ -19,7 +19,8 @@ export function Footer() {
         <p class="leading-tight text(gray-900 base md:xl) dark:text-gray-100">
           Software person.{" "}
           <a href="https://deno.com/blog/the-deno-company">@deno_land</a>{" "}
-          core team. <a href="https://fresh.deno.dev">Fresh</a> builder.{" "}
+          core team. <a href="https://jsr.io">@jsr-io</a> project lead.{" "}
+          <a href="https://fresh.deno.dev">Fresh</a> builder.{" "}
           <a href="https://tc39.es">@tc39</a>{" "}
           delegate. he/him 🏳️‍🌈&nbsp;🌍&nbsp;🌻&nbsp;💚
         </p>
