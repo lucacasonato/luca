@@ -49,11 +49,11 @@ export default function CVPage() {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <div class="mb-24 space-y(8 md:12)">
-        <h1 class="leading-tight text(gray-900 4xl md:5xl) font-bold">
+        <h1 class="leading-tight text(gray-900 4xl md:5xl) font-bold dark:text-gray-100">
           Curriculum vitae
         </h1>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100">
             Jobs
           </h2>
           <ul class="mt-6 text-lg space-y-4">
@@ -61,7 +61,7 @@ export default function CVPage() {
           </ul>
         </div>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100">
             Skills
           </h2>
           <ul class="mt-6 text-lg space-y-4">
@@ -92,7 +92,7 @@ export default function CVPage() {
           </ul>
         </div>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold">
+          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100 dark:text-gray-100">
             Projects
           </h2>
           <ul class="mt-6 text-lg space-y-2">
