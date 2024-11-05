@@ -1,4 +1,4 @@
-import { GitHubIcon, IconLink, MastodonIcon, TwitterIcon } from "./Icons.tsx";
+import { GitHubIcon, IconLink, BlueskyIcon, TwitterIcon } from "./Icons.tsx";
 
 export function SocialLinks(props: { class?: string; tight?: boolean }) {
   return (
@@ -13,15 +13,14 @@ export function SocialLinks(props: { class?: string; tight?: boolean }) {
         icon={GitHubIcon}
       />
       <IconLink
+        href="https://bsky.app/profile/lcas.dev"
+        title="Bluesky"
+        icon={BlueskyIcon}
+      />
+      <IconLink
         href="https://twitter.com/lcasdev"
         title="Twitter"
         icon={TwitterIcon}
-      />
-      <IconLink
-        href="https://mastodon.social/@lcasdev"
-        title="Mastodon"
-        rel="me"
-        icon={MastodonIcon}
       />
     </div>
   );
