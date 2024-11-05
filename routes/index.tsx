@@ -86,8 +86,8 @@ export default function Home() {
         </div>
         <div class="mt-10 leading-7 text(lg gray-900) dark:text-gray-100">
           Wanna talk about something? Message me on{" "}
-          <a href="https://mastodon.social/@lcasdev" class={linkClass}>
-            Mastodon
+          <a href="https://bsky.app/profile/lcas.dev" class={linkClass}>
+            Bluesky
           </a>{" "}
           or email me at{" "}
           <a href="mailto:hello@lcas.dev" class={linkClass}>
