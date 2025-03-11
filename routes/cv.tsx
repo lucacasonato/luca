@@ -17,7 +17,7 @@ const CV: CVItem[] = [
     title: "Lead Software Engineer",
     company: "Deno Land Inc",
     description:
-      "Lead for JSR (JavaScript Registry) project. Previously technical lead for the Deno Deploy edge compute platform. Engineering on the open source Deno project. Built the Fresh web framework. Work in web standards bodies (WHATWG, W3C) and delegate at TC39 (committee that designs the JavaScript language).",
+      "Technical lead for Deno Deploy product. Development on JSR (JavaScript Registry), and member of the JSR board. Engineering on the open source Deno project. Built the Fresh web framework. Work in web standards bodies as chair of TC55 (WinterTC) at ECMA, delegate of TC39 (committee that designs the JavaScript language), and contributions to WHATWG and W3C specs.",
   },
   {
     start: new Date(2019, 5),
@@ -97,7 +97,7 @@ export default function CVPage() {
               <b>large open source projects</b>. I am a core team member of the
               {" "}
               <b>Deno project</b>{" "}
-              which has over 900 contributors and over 11200 commits. We work
+              which has over 1000 contributors and over 13200 commits. We work
               through an average of 220 pull requests and 150 new issues a
               month.
             </li>
@@ -113,7 +113,7 @@ export default function CVPage() {
                 href="https://github.com/denoland/deno"
                 class="font-semibold hover:underline"
               >
-                deno
+                Deno
               </a>{" "}
               - a modern runtime for JavaScript and TypeScript.
             </li>
@@ -122,7 +122,7 @@ export default function CVPage() {
                 href="https://jsr.io"
                 class="font-semibold hover:underline"
               >
-                jsr
+                JSR
               </a>{" "}
               - a modern package registry for JavaScript and TypeScript.
             </li>
@@ -131,7 +131,7 @@ export default function CVPage() {
                 href="https://fresh.deno.dev"
                 class="font-semibold hover:underline"
               >
-                fresh
+                Fresh
               </a>{" "}
               - a web framework for building very fast websites with great
               developer experience.

@@ -55,7 +55,8 @@ export default function Home() {
           <a href="https://github.com/lucacasonato" class={linkClass}>
             open source enthusiast
           </a>
-          . I like Rust, Go, TypeScript, and fast websites. I work at the{" "}
+          . I like Rust, TypeScript, PostgreSQL, and fast websites. I work at
+          the{" "}
           <a href="https://deno.com/blog/the-deno-company" class={linkClass}>
             Deno company
           </a>, building{" "}
@@ -65,29 +66,21 @@ export default function Home() {
           and{" "}
           <a href="https://deno.com/deploy" class={linkClass}>
             Deno Deploy
-          </a>, leading the <a href="https://jsr.io" class={linkClass}>JSR</a>
-          {" "}
+          </a>, working on the{" "}
+          <a href="https://jsr.io" class={linkClass}>JSR</a>{" "}
           project, and contributing to{" "}
           <a href="https://fresh.deno.dev" class={linkClass}>
             Fresh
           </a>. I also serve as a delegate at{" "}
           <a href="https://tc39.es" class={linkClass}>TC39</a> and am a chair of
           {" "}
-          <a href="https://wintercg.org" class={linkClass}>WinterCG</a>. I built
-          {" "}
-          <a
-            href="https://github.com/lucacasonato/deno-puppeteer"
-            class={linkClass}
-          >
-            deno-puppeteer
-          </a>
-          , and a few other open source libraries. Probably reading some web
-          spec right now.
+          <a href="https://wintertc.org" class={linkClass}>TC55 (WinterTC)</a>.
+          Probably reading some web spec right now.
         </div>
         <div class="mt-10 leading-7 text(lg gray-900) dark:text-gray-100">
           Wanna talk about something? Message me on{" "}
-          <a href="https://mastodon.social/@lcasdev" class={linkClass}>
-            Mastodon
+          <a href="https://bsky.app/profile/lcas.dev" class={linkClass}>
+            Bluesky
           </a>{" "}
           or email me at{" "}
           <a href="mailto:hello@lcas.dev" class={linkClass}>
