@@ -17,11 +17,6 @@ export function SocialLinks(props: { class?: string; tight?: boolean }) {
         title="Bluesky"
         icon={BlueskyIcon}
       />
-      <IconLink
-        href="https://twitter.com/lcasdev"
-        title="Twitter"
-        icon={TwitterIcon}
-      />
     </div>
   );
 }
