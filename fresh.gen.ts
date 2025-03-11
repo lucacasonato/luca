@@ -2,7 +2,6 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import type { Manifest } from "$fresh/server.ts";
 import * as $_app from "./routes/_app.tsx";
 import * as $bsky from "./routes/bsky.ts";
 import * as $cv from "./routes/cv.tsx";
@@ -10,6 +9,8 @@ import * as $index from "./routes/index.tsx";
 import * as $mastodon from "./routes/mastodon.ts";
 import * as $mfl2022benches from "./routes/mfl2022benches.ts";
 import * as $test from "./routes/test.ts";
+
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
