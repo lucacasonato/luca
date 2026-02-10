@@ -1,7 +1,7 @@
-import { Handlers } from "$fresh/server.ts";
+import { define } from "@/utils.ts";
 
-export const handler: Handlers = {
+export const handler = define.handlers({
   GET() {
     return Response.redirect("https://mastodon.social/@lcasdev");
   },
-};
+});

@@ -1,6 +1,6 @@
-import { Head } from "$fresh/runtime.ts";
-
-import { Footer } from "../components/Footer.tsx";
+import { Head } from "fresh/runtime";
+import { define } from "@/utils.ts";
+import { Footer } from "@/components/Footer.tsx";
 
 interface CVItem {
   start: Date;
@@ -37,9 +37,9 @@ const CV: CVItem[] = [
   },
 ];
 
-export default function CVPage() {
+export default define.page(function CVPage() {
   return (
-    <div class="mx-auto max-w-screen-md px(4 sm:6 md:8) my(12 sm:20 md:32)">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 md:px-8 my-12 sm:my-20 md:my-32">
       <Head>
         <title>CV - Luca Casonato</title>
         <meta
@@ -48,20 +48,20 @@ export default function CVPage() {
         />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
-      <div class="mb-24 space-y(8 md:12)">
-        <h1 class="leading-tight text(gray-900 4xl md:5xl) font-bold dark:text-gray-100">
+      <div class="mb-24 space-y-8 md:space-y-12">
+        <h1 class="leading-tight text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100">
           Curriculum vitae
         </h1>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100">
+          <h2 class="leading-tight text-3xl font-semibold text-gray-900 dark:text-gray-100">
             Jobs
           </h2>
           <ul class="mt-6 text-lg space-y-4">
-            {CV.map((item) => <Item item={item} />)}
+            {CV.map((item) => <Item key={item.start} item={item} />)}
           </ul>
         </div>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100">
+          <h2 class="leading-tight text-3xl font-semibold text-gray-900 dark:text-gray-100">
             Skills
           </h2>
           <ul class="mt-6 text-lg space-y-4">
@@ -104,7 +104,7 @@ export default function CVPage() {
           </ul>
         </div>
         <div>
-          <h2 class="leading-tight text(gray-900 3xl) font-semibold dark:text-gray-100 dark:text-gray-100">
+          <h2 class="leading-tight text-3xl font-semibold text-gray-900 dark:text-gray-100">
             Projects
           </h2>
           <ul class="mt-6 text-lg space-y-2">
@@ -142,7 +142,7 @@ export default function CVPage() {
       <Footer />
     </div>
   );
-}
+});
 
 function Item(props: { item: CVItem }) {
   const now = new Date();

@@ -1,4 +1,4 @@
-import { GitHubIcon, IconLink, BlueskyIcon, TwitterIcon } from "./Icons.tsx";
+import { BlueskyIcon, GitHubIcon, IconLink } from "./Icons.tsx";
 
 export function SocialLinks(props: { class?: string; tight?: boolean }) {
   return (
