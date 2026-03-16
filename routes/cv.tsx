@@ -13,7 +13,7 @@ interface CVItem {
 const CV: CVItem[] = [
   {
     start: new Date(2020, 7),
-    end: null,
+    end: new Date(2026, 3),
     title: "Lead Software Engineer",
     company: "Deno Land Inc",
     description:
