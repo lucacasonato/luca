@@ -40,8 +40,8 @@ export default define.page(function Home() {
           <a href="https://github.com/lucacasonato" class="link">
             open source enthusiast
           </a>
-          . I like Rust, TypeScript, PostgreSQL, and fast websites. I work at
-          the{" "}
+          . I like Rust, TypeScript, PostgreSQL, and fast websites. I previously
+          worked at the{" "}
           <a href="https://deno.com/blog/the-deno-company" class="link">
             Deno company
           </a>, building{" "}
@@ -56,10 +56,10 @@ export default define.page(function Home() {
           project, and contributing to{" "}
           <a href="https://fresh.deno.dev" class="link">
             Fresh
-          </a>. I also serve as a delegate at{" "}
-          <a href="https://tc39.es" class="link">TC39</a> and am a chair of{" "}
+          </a>. I also served as a delegate at{" "}
+          <a href="https://tc39.es" class="link">TC39</a> and was a chair of
+          {" "}
           <a href="https://wintertc.org" class="link">TC55 (WinterTC)</a>.
-          Probably reading some web spec right now.
         </div>
         <div class="mt-10 leading-7 text-lg text-gray-900 dark:text-gray-100">
           Wanna talk about something? Message me on{" "}
